@@ -9,6 +9,7 @@ public List<Integer> preorderTraversal(TreeNode root) {
         if(curr.right != null) {
             s.push(curr.right);
         }
+        curr = curr.left;
         if(curr.left != null) {
             s.push(curr.left);
         }
